@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: right;
+  gap: 5px;
+}
+
+.flex-container-row {
+  display: flex;
+  gap: 5px;
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  border: 1px solid #e3defe;
+  border-radius: 10px;
+  background: #e3defe;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.double {
+  flex-basis: 50%;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.operator,
+.negative,
+.equals {
+  background: #8c7ace;
+  border: 1px solid #8c7ace;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: #8c7ace;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+
+  .history {
+    width: 100%;
+  }
+}
